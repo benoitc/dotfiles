@@ -1,0 +1,113 @@
+include: "XTerm"
+
+
+Xft.antialias:			true
+
+xcalendar*firstDay:		1
+xcalendar*markHoliday:		false
+XClock*update:1
+XClock*analog: false
+XClock*foreground: 		#e1e1e1
+XClock*background:		#303030
+
+!-----------------------------------------------
+!
+!	X T E R M - Setting
+xterm.*.loginShell: true
+
+*VT100*loginShell: true
+*VT100*colorMode: on
+*VT100*boldColors: on
+*VT100*dynamicColors: on
+*VT100*background:       #202427
+*VT100*foreground:       #e1e1e1
+*VT100*saveLines: 10000
+
+*VT100*underLine:		off
+*VT100*colorBD:			lightyellow
+*VT100*colorBDMode:		on
+*VT100*colorUL:			yellow
+*VT100*colorULMode:		on
+*VT100*highlightSelection:	true
+*VT100*color0:		#202427
+*VT100*color8:	        #757575
+!red
+*VT100*color1:	        #EA6868
+*VT100*color9:	        #FF7272
+!green
+*VT100*color2:	        #ABCB8D
+*VT100*color10:	        #AFD78A
+!yellow
+*VT100*color3:	        #E8AE5B
+*VT100*color11:	        #FFA75D
+!blue
+*VT100*color4:	        #71C5F4
+*VT100*color12:	        #67CDE9
+!magenta
+*VT100*color5:	        #E2BAF1
+*VT100*color13:	        #ECAEE9
+!cyan
+*VT100*color6:	        #21F1EA
+*VT100*color14:	        #36FFFC
+!white
+*VT100*color7:	        #F1F1F1
+*VT100*color15:	        #FFFFFF
+
+
+! -/ Color Set (a) /-
+colorsa*background: #202427
+colorsa*foreground: #e1e1e1
+colorsa*cursorColor: #98b4c8
+colorsa*color0: #0a0a0a
+colorsa*color8: #71a3b7
+colorsa*color1: #dca3a3
+colorsa*color9: #f4a45f
+colorsa*color2: #afc5af
+colorsa*color10: #95c749
+colorsa*color3: #ffffef
+colorsa*color11: #cdcdc1
+colorsa*color4: #8e9fbc
+colorsa*color12: #8e9fbc
+colorsa*color5: #cdbfaf
+colorsa*color13: #cdbfaf
+colorsa*color6: #a1b5cd
+colorsa*color14: #a1b5cd
+colorsa*color7: #ffffff
+colorsa*color15: #dedede
+colorsa*scrollBar:		false
+colorsa*font:		cure
+colorsa*saveLines:	5000
+
+irssi*font:	-windows-proggyclean-medium-r-normal--10-80-96-96-c-60-iso8859-1
+irssi*background: #202427
+irssi*foreground: #e1e1e1
+irssi*cursorColor: #98b4c8
+irssi*cursorBlink: true
+irssi*boldMode: false
+
+irssi*color0:		#676767
+irssi*color8:	        #757575
+!red
+irssi*color1:	        #EA6868
+irssi*color9:	        #FF7272
+!green
+irssi*color2:	        #ABCB8D
+irssi*color10:	        #AFD78A
+!yellow
+irssi*color3:	        #E8AE5B
+irssi*color11:	        #FFA75D
+!blue
+irssi*color4:	        #71C5F4
+irssi*color12:	        #67CDE9
+!magenta
+irssi*color5:	        #E2BAF1
+irssi*color13:	        #ECAEE9
+!cyan
+irssi*color6:	        #21F1EA
+irssi*color14:	        #36FFFC
+!white
+irssi*color7:	        #F1F1F1
+irssi*color15:	        #FFFFFF
+irssi*eightBitInput:   false
+irssi*metaSendsEscape: true
+irssi*scrollBar:	false

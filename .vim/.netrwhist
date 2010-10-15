@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/benoitc/work/couchbeam/doc'
+let g:netrw_dirhist_2='/home/benoitc/couchapps/src/restkit'
+let g:netrw_dirhist_3='/home/benoitc/couchapps/src/restkit/restkit'
+let g:netrw_dirhist_4='/home/benoitc/couchapps/src/restkit/restkit/client'
+let g:netrw_dirhist_5='/home/benoitc/couchapps/src/restkit/restkit'
+let g:netrw_dirhist_6='/home/benoitc/couchapps/src/restkit/restkit/http'
+let g:netrw_dirhist_7='/home/benoitc/work/couchbeam'
+let g:netrw_dirhist_8='/home/benoitc/work/couchbeam/src'
