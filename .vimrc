@@ -9,7 +9,9 @@ set nobackup		" keep a backup file
 set history=50		" keep 50 lines of command line history
 set incsearch		" do incremental searching
 
-set tw=72
+
+set listchars=tab:>.,trail:.
+set tw=78
 
 map Q gq
 
@@ -65,6 +67,14 @@ set showcmd
 set showmode
 set updatetime=250
 "set enc=utf-8
+
+
+if exists('+colorcolumn')
+    set colorcolumn=80
+else
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
+
 
 "set ls=2
 set statusline=%<%F%h%m%r%h%w%y\ %{&ff}\ %{strftime(\"%d/%m/%Y-%H:%M\")}%=\ %c%V\ %l\,%L\ %P
@@ -144,11 +154,26 @@ inoremap <Tab> <C-R>=CleverTab()<CR>
 imap <C-Space> <C-X><C-O>
 
 noremap <silent> <F4> :Tlist<CR>
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " html5
-set makeprg=/home/benoitc/bin/validate-html.sh\ %
+"set makeprg=/home/benoitc/bin/validate-html.sh\ %
 set errorformat=%f:%l.%c-%m
+
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType js setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType javascripts setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 
 au BufRead,BufNewFile *.json set filetype=json
 au! Syntax json source /Users/benoitc/.vim/ftplugin/json.vim
+au BufRead,BufNewFile *.dtl set filetype=htmldjango
 
+autocmd FileType python autocmd BufWritePre * :%s/\s\+$//e
+autocmd FileType erlang autocmd BufWritePre * :%s/\s\+$//e
+autocmd FileType js autocmd BufWritePre * :%s/\s\+$//e
+autocmd FileType javascript autocmd BufWritePre * :%s/\s\+$//e
+
+set directory=~/.backup/vim/swap
+set backupdir=~/.backup/vim
+set backup 
