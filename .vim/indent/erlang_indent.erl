@@ -1,7 +1,11 @@
 #!/usr/bin/env escript
 %%! -detached
 
--mode(compile).
+% XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
+% There seems to be a compiler bug in the R16 release which makes to compilation
+% of this script painfully slow. Comment out the next line when the issue is fixed:
+%-mode(compile).
+% XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
 
 %-define(DEBUG, true).
 
@@ -131,6 +135,8 @@ indentation_between(PrevToks, NextToks) ->
                 {Tab2 - 2, none};
             {[{'->', _} | _], [T | _]} when ?IS(T, 'after') ->
                 {Tab2 - 2, none};
+            {[T1 | _], [T2 | _]} when ?IS(T1, 'begin'), ?IS(T2, 'end') ->
+                {Tab2 - 1, none};
             {[T1 | _], [T2 | _]} when ?IS(T1, 'try'), ?IS(T2, 'end') ->
                 {Tab2 - 1, none};
             {[T1 | _], [T2 | _]} when ?IS(T1, '->'), ?IS(T2, 'end') ->
@@ -156,13 +162,20 @@ parse_tokens(Tokens = [{'-', _} | _]) ->
     parse_attribute(Tokens, #state{});
 parse_tokens(Tokens = [{atom, _, _} | _]) ->
     parse_function(Tokens, #state{});
+parse_tokens(Tokens = [{T, _} | _]) when T == '['; T == '{'; T == '(' ->
+    parse_datum(Tokens, #state{});
 parse_tokens(Tokens) ->
     throw({parse_error, Tokens, #state{}, ?LINE}).
 
+parse_datum([T | Tokens], State) ->
+    parse_next(Tokens, indent(push(State, T, 0), 1));
+parse_datum([], State) ->
+    State.
+
 parse_attribute([T = {'-', _}, {atom, _, export} | Tokens], State = #state{stack = []}) ->
     parse_next(Tokens, push(State, T, -1));
-parse_attribute([T = {'-', _}, {atom, _, spec} | Tokens], State = #state{stack = []}) ->
-    parse_next(Tokens, push(State, T, 1));
+parse_attribute([T1 = {'-', _}, T2, T3 | Tokens], State = #state{stack = []}) when ?IS(T2, atom), ?IS(T3, atom) ->
+    parse_next(Tokens, push(State, T1, 1));
 parse_attribute([T = {'-', _} | Tokens], State = #state{stack = []}) ->
     parse_next(Tokens, push(State, T, 0));
 parse_attribute(Tokens, State) ->
@@ -255,7 +268,9 @@ parse_next2([T | Tokens], State = #state{stack = [{'->', _}, {'receive', _} | _]
     parse_next(Tokens, indent_after(Tokens, pop(State), 2));
 parse_next2([T | Tokens], State = #state{stack = [{'->', _} | _]}) when ?IS(T, 'after') ->
     parse_next(Tokens, pop(State));
-parse_next2([{'end', _} | Tokens], State = #state{stack = [{'try', _} | _]}) ->
+parse_next2([T | Tokens], State) when ?IS(T, 'begin') ->
+    parse_next(Tokens, push(State, T, 1));
+parse_next2([{'end', _} | Tokens], State = #state{stack = [T | _]}) when ?IS(T, 'begin'); ?IS(T, 'try') ->
     parse_next(Tokens, pop(State));
 parse_next2([{'end', _} | Tokens], State = #state{stack = [{'->', _} | _]}) ->
     parse_next(Tokens, pop(pop(State)));
@@ -306,7 +321,7 @@ next_relevant_token(Tokens) ->
 
 irrelevant_token(Token) ->
     Chars = ['(', ')', '{', '}', '[', ']', '<<', '>>', '=', '->', '||', ',', ';', dot],
-    Keywords = ['fun', 'receive', 'if', 'case', 'try', 'of', 'catch', 'after', 'end'],
+    Keywords = ['fun', 'receive', 'if', 'case', 'try', 'of', 'catch', 'after', 'begin', 'end'],
     Cat = category(Token),
     not lists:member(Cat, Chars ++ Keywords).
 

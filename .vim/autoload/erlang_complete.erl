@@ -3,21 +3,28 @@
 -include_lib("xmerl/include/xmerl.hrl").
 
 main([ModName]) ->
-    code:add_path("ebin"),
     case file:consult("rebar.config") of
         {ok, Terms} ->
-            RebarDeps = proplists:get_value(deps_dir, Terms, "deps"),
-            code:add_paths(filelib:wildcard(RebarDeps ++ "/*/ebin"));
-        _ ->
-            ok
+            RebarLibDirs = proplists:get_value(lib_dirs, Terms, []),
+            lists:foreach(
+                fun(LibDir) ->
+                        code:add_pathsa(filelib:wildcard(LibDir ++ "/*/ebin"))
+                end, RebarLibDirs),
+            RebarDepsDir = proplists:get_value(deps_dir, Terms, "deps"),
+            code:add_pathsa(filelib:wildcard(RebarDepsDir ++ "/*/ebin"));
+        {error, _} ->
+            true
     end,
+    code:add_patha("ebin"),
     Mod = list_to_atom(ModName),
     Edoc = try
         module_edoc(Mod)
     catch
-        exit:error ->
-            [];
         throw:not_found ->
+            [];
+        error:{badmatch, _} ->
+            [];
+        exit:error ->
             []
     end,
     Info = try
@@ -126,6 +133,8 @@ simplify_return({paren, _, Types}) ->
 simplify_return({union, _, Types}) ->
     Elems = lists:map(fun(Type) -> simplify_return(Type) end, Types),
     string:join(Elems, " | ");
+simplify_return({integer, [{value, Val}], _}) ->
+    Val;
 simplify_return({atom, [{value, Val}], _}) ->
     Val;
 simplify_return({nil, _, _}) ->

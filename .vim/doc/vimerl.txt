@@ -53,10 +53,11 @@ In this section it is explained how to use the features of this plugin.
 All the code you write is automatically indented. To reindent a block of code
 use the |=| or |v_=| command.
 
-The code indenting feature it's implemented as an Erlang escript that helps
+The code indenting feature is implemented as an Erlang escript that helps
 Vim parsing code and calculating the indentation level of each line. This
 escript communicates with Vim through a pair of named pipes located in the
-"indent/" folder where Vimerl is installed.
+"indent/" directory where Vimerl is installed or in "/tmp" if "indent/" is
+not writeable.
 
 It is recommended to enable the Vim option |'expandtab'|, with it the code
 will be indented more nicely lining up columns when possible.
@@ -93,6 +94,13 @@ current directory, plus "ebin/" and "src/".
 If your project uses Rebar, Vimerl will search the value of "deps_dir" in
 "rebar.config", with "deps/" as default, to also let you use omni completion
 on dependency modules.
+
+A cache file is created in the "autoload/" directory where Vimerl is installed
+or in "/tmp" if "autoload/" is not writeable. This cache file stores all the
+modules information.
+
+If the cached information about a module becomes outdated, you can use the
+|:ErlangPurgeCache| command to remove that information from the cache.
 
 Note: the user is responsible for having compiled his project so that Vimerl
       finds the .beam files.
@@ -155,8 +163,17 @@ Loads an OTP gen_fsm skeleton: >
                                                              *:ErlangGenEvent*
 Loads an OTP gen_event skeleton: >
 	:ErlangGenEvent
+<
+                                                           *:ErlangCommonTest*
+Loads an OTP common_test skeleton: >
+	:ErlangCommonTest
 
 Note: all the previous commands are applied to the current buffer.
+
+                                                           *:ErlangPurgeCache*
+Removes one or more specified modules from the cache: >
+	:ErlangPurgeCache module1
+	:ErlangPurgeCache module1 module2
 
 ==============================================================================
 4. Options                                                    *vimerl-options*
@@ -195,6 +212,13 @@ values: dictionary): >
 				   "year"  : "2000"}
 
 Note: the "year" key may be omitted, in that case the current year is used.
+
+------------------------------------------------------------------------------
+                                                         *'erlang_skel_dir'*
+
+This option allows to define a custom directory to use for loading code
+skeletons (default: "~/.vim/plugin/erlang_skels", values: string): >
+	:let erlang_skel_dir = "~/.vim/plugin/erlang_skels"
 
 ------------------------------------------------------------------------------
                                                          *'erlang_keywordprg'*

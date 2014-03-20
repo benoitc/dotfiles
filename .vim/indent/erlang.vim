@@ -2,7 +2,7 @@
 " Language: Erlang
 " Author:   Ricardo Catalinas Jiménez <jimenezrick@gmail.com>
 " License:  Vim license
-" Version:  2012/01/26
+" Version:  2012/11/26
 
 if exists('b:did_indent')
 	finish
@@ -18,8 +18,13 @@ if exists('*ErlangIndent')
 endif
 
 let s:erlang_indent_file = expand('<sfile>:p:h') . '/erlang_indent.erl'
-let s:in_fifo            = expand('<sfile>:p:h') . '/in_fifo.' . getpid()
-let s:out_fifo           = expand('<sfile>:p:h') . '/out_fifo.' . getpid()
+if filewritable(expand('<sfile>:p:h')) == 2
+	let s:in_fifo  = expand('<sfile>:p:h') . '/vimerl_in_fifo.' . getpid()
+	let s:out_fifo = expand('<sfile>:p:h') . '/vimerl_out_fifo.' . getpid()
+else
+	let s:in_fifo  = '/tmp/vimerl_in_fifo.' . getpid()
+	let s:out_fifo = '/tmp/vimerl_out_fifo.' . getpid()
+endif
 
 execute 'silent !mkfifo' s:in_fifo
 execute 'silent !mkfifo' s:out_fifo

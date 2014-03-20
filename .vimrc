@@ -1,5 +1,21 @@
 
 set nocompatible
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle, required
+Bundle 'gmarik/vundle'
+Bundle 'wting/rust.vim'
+
+set rtp+=/usr/local/go/misc/vim
+filetype plugin indent on
+filetype plugin on
+syntax on
+
+
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -11,9 +27,12 @@ set incsearch		" do incremental searching
 
 
 set listchars=tab:>.,trail:.
-set tw=78
+set tw=72
 
 map Q gq
+
+" GO plugins
+set rtp+=$GOROOT/misc/vim
 
 syntax on
 set hlsearch
@@ -157,12 +176,11 @@ noremap <silent> <F4> :Tlist<CR>
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " html5
-"set makeprg=/home/benoitc/bin/validate-html.sh\ %
+set makeprg=/home/benoitc/bin/validate-html.sh\ %
 set errorformat=%f:%l.%c-%m
 
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType js setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType javascripts setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 
 au BufRead,BufNewFile *.json set filetype=json
@@ -172,7 +190,7 @@ au BufRead,BufNewFile *.dtl set filetype=htmldjango
 autocmd FileType python autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType erlang autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType js autocmd BufWritePre * :%s/\s\+$//e
-autocmd FileType javascript autocmd BufWritePre * :%s/\s\+$//e
+autocmd FileType go autocmd BufWritePre * :%s/\s\+$//e
 
 set directory=~/.backup/vim/swap
 set backupdir=~/.backup/vim
