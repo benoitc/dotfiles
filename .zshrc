@@ -54,15 +54,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 source $ZSH/oh-my-zsh.sh
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+export EDITOR=vim
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -81,9 +75,9 @@ source $ZSH/oh-my-zsh.sh
 #
 
 # load tmux
-#case $- in *i*)
-#        if [ -z "$TMUX" ]; then exec tmux; fi;;
-#esac
+case $- in *i*)
+        if [ -z "$TMUX" ]; then exec tmux; fi;;
+esac
 
 # load Erlang
 . /Users/benoitc/local/otp/otp-17.4/activate
