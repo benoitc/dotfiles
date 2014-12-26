@@ -1,7 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/benoitc/work/erlang-czmq/c_src'
-let g:netrw_dirhist_2='/home/benoitc/work/erlang-czmq/c_src/.libs/czmq-2.0.3'
-let g:netrw_dirhist_3='/home/benoitc/work/erlang-czmq/c_src/.libs/czmq-2.0.3/src'
-let g:netrw_dirhist_4='/home/benoitc/work/opencouch'
-let g:netrw_dirhist_5='/home/benoitc/work/opencouch/src'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/benoitc/work/hackney_pooler'
+let g:netrw_dirhist_2='/Users/benoitc/work/hackney_pooler/src'
+let g:netrw_dirhist_3='/Users/benoitc/work/orange/libon_mongooseim/apps/ejabberd/src'
+let g:netrw_dirhist_4='/Users/benoitc/work/orange/libon_xmpp_rel'
+let g:netrw_dirhist_5='/Users/benoitc/work/orange/libon_xmpp_rel/rel'
+let g:netrw_dirhist_6='/Users/benoitc/work/orange/libon_xmpp_rel/rel/files'
+let g:netrw_dirhist_7='/Users/benoitc'
+let g:netrw_dirhist_8='/Users/benoitc/.vim'
+let g:netrw_dirhist_9='/Users/benoitc'

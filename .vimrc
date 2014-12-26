@@ -1,14 +1,5 @@
 
 set nocompatible
-filetype off
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle, required
-Bundle 'gmarik/vundle'
-Bundle 'wting/rust.vim'
 
 set rtp+=/usr/local/go/misc/vim
 filetype plugin indent on
@@ -27,13 +18,14 @@ set incsearch		" do incremental searching
 
 
 set listchars=tab:>.,trail:.
-set tw=72
+set tw=78
 
 map Q gq
 
 " GO plugins
 set rtp+=$GOROOT/misc/vim
 
+execute pathogen#infect()
 syntax on
 set hlsearch
 
@@ -53,7 +45,7 @@ if has("autocmd")
   au!
 
   " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
+  autocmd FileType text setlocal textwidth=80
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
@@ -139,7 +131,19 @@ if has("gui_running")
     set guioptions-=R
 
     set guifont="Sans 8"
+else
+    if has("mouse")
+        set mouse=a
+        set mousehide
+    endif
+
+    if &term =~ '^screen'
+        " tmux knows the extended mouse mode
+        set ttymouse=xterm2
+    endif
 endif
+
+
 
 
 " autocompletion when using tab
@@ -153,7 +157,7 @@ endfunction
 
 
 " ctags
-let Tlist_Ctags_Cmd = '/usr/local/bin/ectags' " Location of ctags
+let Tlist_Ctags_Cmd = '/usr/local/bin/ctags' " Location of ctags
 let Tlist_Sort_Type = "name" " order by 
 let Tlist_Use_Right_Window = 1 " split to the right side of the screen
 let Tlist_Compart_Format = 1 " show small meny
@@ -194,4 +198,9 @@ autocmd FileType go autocmd BufWritePre * :%s/\s\+$//e
 
 set directory=~/.backup/vim/swap
 set backupdir=~/.backup/vim
-set backup 
+set backup
+
+" use the system clipboard by default, requires a Vim compiled
+" " with +clipboard - `brew install vim` is the easiest way
+set clipboard=unnamed
+
