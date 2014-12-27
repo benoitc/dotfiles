@@ -13,7 +13,7 @@
 " http://wiki.whatwg.org/wiki/Validator.nu_GNU_Output
 " http://wiki.whatwg.org/wiki/Validator.nu_Common_Input_Parameters
 
-set makeprg=validate-html.sh\ %
+set makeprg=~/.vim/ftplugin/validate-html.sh\ %
 set errorformat=%f:%l.%c-%m
 
 " BUGS:

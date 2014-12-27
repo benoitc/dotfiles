@@ -1,12 +1,12 @@
-
 set nocompatible
+set encoding=utf-8
+
+source ~/.vim/bundles.vim
 
 set rtp+=/usr/local/go/misc/vim
 filetype plugin indent on
 filetype plugin on
 syntax on
-
-
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -25,7 +25,6 @@ map Q gq
 " GO plugins
 set rtp+=$GOROOT/misc/vim
 
-execute pathogen#infect()
 syntax on
 set hlsearch
 
@@ -33,17 +32,15 @@ filetype on
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
-
   " Enable file type detection.
   " Use the default filetype settings, so that mail gets 'tw' set to 72,
   " 'cindent' is on in C files, etc.
   " Also load indent files, to automatically do language-dependent indenting.
   filetype plugin indent on
-
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
   au!
-
+  
   " For all text files set 'textwidth' to 78 characters.
   autocmd FileType text setlocal textwidth=80
 
@@ -73,14 +70,17 @@ set expandtab
 set softtabstop=4
 set number
 set ruler
-set scrolloff=10
+"set scrolloff=10
 set showcmd
 set showmode
 set updatetime=250
-"set enc=utf-8
+"set enc=utf-8;
 
+" no error or visual error annoyance
+set noerrorbells
+set visualbell t_vb=
 
-if exists('+colorcolumn')
+if exists('+colorcolum:n')
     set colorcolumn=80
 else
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
@@ -89,8 +89,6 @@ endif
 
 "set ls=2
 set statusline=%<%F%h%m%r%h%w%y\ %{&ff}\ %{strftime(\"%d/%m/%Y-%H:%M\")}%=\ %c%V\ %l\,%L\ %P
-
-color wombat
 
 filetype plugin on
 "filetype plugin indent on
@@ -108,6 +106,8 @@ endif
 " Preview des <Tab>
 "set list listchars=tab:»\ 
 
+
+
 if has("gui_running")
     set ch=2		" Make command line two lines high
 
@@ -121,7 +121,6 @@ if has("gui_running")
 
     set hlsearch
     let c_comment_strings=1
-    color wombat
 
     set guioptions-=T
     set guioptions-=m
@@ -136,65 +135,7 @@ else
         set mouse=a
         set mousehide
     endif
-
-    if &term =~ '^screen'
-        " tmux knows the extended mouse mode
-        set ttymouse=xterm2
-    endif
 endif
-
-
-
-
-" autocompletion when using tab
-function! CleverTab()
-       if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
-               return "\<Tab>"
-       else
-               return "\<C-N>"
-       endif
-endfunction
-
-
-" ctags
-let Tlist_Ctags_Cmd = '/usr/local/bin/ctags' " Location of ctags
-let Tlist_Sort_Type = "name" " order by 
-let Tlist_Use_Right_Window = 1 " split to the right side of the screen
-let Tlist_Compart_Format = 1 " show small meny
-let Tlist_Exist_OnlyWindow = 1 " if you are the last, kill yourself
-let Tlist_File_Fold_Auto_Close = 1 " Do not close tags for other files
-let Tlist_Enable_Fold_Column = 0 " Do not show folding tree
-    
-" minibuffer explorer
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1
-
-
-" mappings
-inoremap <Tab> <C-R>=CleverTab()<CR>
-imap <C-Space> <C-X><C-O>
-
-noremap <silent> <F4> :Tlist<CR>
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
-
-" html5
-set makeprg=/home/benoitc/bin/validate-html.sh\ %
-set errorformat=%f:%l.%c-%m
-
-autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType js setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
-
-au BufRead,BufNewFile *.json set filetype=json
-au! Syntax json source /Users/benoitc/.vim/ftplugin/json.vim
-au BufRead,BufNewFile *.dtl set filetype=htmldjango
-
-autocmd FileType python autocmd BufWritePre * :%s/\s\+$//e
-autocmd FileType erlang autocmd BufWritePre * :%s/\s\+$//e
-autocmd FileType js autocmd BufWritePre * :%s/\s\+$//e
-autocmd FileType go autocmd BufWritePre * :%s/\s\+$//e
 
 set directory=~/.backup/vim/swap
 set backupdir=~/.backup/vim
@@ -204,3 +145,5 @@ set backup
 " " with +clipboard - `brew install vim` is the easiest way
 set clipboard=unnamed
 
+" Source .vimrc on save
+autocmd! bufwritepost ~/.vimrc  source ~/.vimrc
