@@ -76,7 +76,7 @@ export EDITOR=vim
 
 # load tmux
 case $- in *i*)
-        if [ -z "$TMUX" ]; then exec tmux; fi;;
+    if [ -z "$TMUX" ]; then exec tmux; fi;;
 esac
 
 # load Erlang
