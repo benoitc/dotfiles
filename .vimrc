@@ -139,7 +139,7 @@ else
     if has("mouse_sgr")
         set ttymouse=sgr
     endif
-end
+endif
 
 set directory=~/.backup/vim/swap
 set backupdir=~/.backup/vim
