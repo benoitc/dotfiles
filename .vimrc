@@ -135,7 +135,11 @@ else
         set mouse=a
         set mousehide
     endif
-endif
+
+    if has("mouse_sgr")
+        set ttymouse=sgr
+    endif
+end
 
 set directory=~/.backup/vim/swap
 set backupdir=~/.backup/vim
