@@ -13,6 +13,7 @@ Bundle 'jimenezrick/vimerl'
 Bundle 'rizzatti/dash.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
+Bundle 'cHoco/vim-togglecursor'
 
 call vundle#end()
 filetype plugin indent on
