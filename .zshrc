@@ -49,7 +49,11 @@ plugins=(git brew osx)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+unalias run-help
+autoload run-help
+HELPDIR=/usr/local/share/zsh/help
+
+export PATH="$HOME/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -74,10 +78,46 @@ export EDITOR=vim
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
+export LC_ALL=en_US.UTF-8
+export SHELL=$(which zsh)
+
 # load tmux
 case $- in *i*)
-    if [ -z "$TMUX" ]; then exec tmux; fi;;
+    if [ -z "$TMUX" ]; then exec tmux -2; fi;;
 esac
 
+# coreutils
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
+
+# elixir
+export PATH=$HOME/local/elixir/1.2.3/bin:$PATH
+
+# chromium depot_tools
+export PATH=$HOME/local/depot_tools:$PATH
+
+#rebar3
+export PATH=/Users/benoitc/.cache/rebar3/bin:$PATH
+
+# dart
+export PATH=$PATH:$HOME/.pub-cache/bin
+
+# android
+export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools:$HOME/Library/Android/sdk/tools
+
+
 # load Erlang
-. /Users/benoitc/local/otp/otp-17.4/activate
+. /Users/benoitc/local/otp/18.1.3/activate
+
+test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
+
+
+# android
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export PATH=$PATH:/usr/local/opt/android-sdk/bin
+
+export NVM_DIR="/Users/benoitc/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# added by travis gem
+[ -f /Users/benoitc/.travis/travis.sh ] && source /Users/benoitc/.travis/travis.sh
