@@ -1,0 +1,579 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted/
+#nrec0	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*record\s\*(\s\*nrec0\>/;"	r	file:
+#nrec1	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*record\s\*(\s\*nrec1\>/;"	r	file:
+#nrec2	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*record\s\*(\s\*nrec2\>/;"	r	file:
+#person	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*record\s\*(\s\*person\>/;"	r	file:
+#person	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*record\s\*(\s\*person\>/;"	r	file:
+#rec	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*record\s\*(\s\*rec\>/;"	r	file:
+#state	./bundle/vimerl/indent/erlang_indent.erl	/^-\s\*record\s\*(\s\*state\>/;"	r	file:
+?BRANCH_EXPR	./bundle/vimerl/indent/erlang_indent.erl	/^-\s\*define\s\*(\s\*BRANCH_EXPR\>/;"	d	file:
+?CLOSE_BRACKET	./bundle/vimerl/indent/erlang_indent.erl	/^-\s\*define\s\*(\s\*CLOSE_BRACKET\>/;"	d	file:
+?COMPILE	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^-\s\*define\s\*(\s\*COMPILE\>/;"	d	file:
+?DEFAULT_PATH	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^-\s\*define\s\*(\s\*DEFAULT_PATH\>/;"	d	file:
+?FOO	./bundle/vimerl/test/test_spaces.erl	/^-\s\*define\s\*(\s\*FOO\>/;"	d	file:
+?FOO	./bundle/vimerl/test/test_tabs.erl	/^-\s\*define\s\*(\s\*FOO\>/;"	d	file:
+?IS	./bundle/vimerl/indent/erlang_indent.erl	/^-\s\*define\s\*(\s\*IS\>/;"	d	file:
+?MACRO1	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*define\s\*(\s\*MACRO1\>/;"	d	file:
+?MACRO1	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*define\s\*(\s\*MACRO1\>/;"	d	file:
+?OPEN_BRACKET	./bundle/vimerl/indent/erlang_indent.erl	/^-\s\*define\s\*(\s\*OPEN_BRACKET\>/;"	d	file:
+?PRINT_ERROR	./bundle/vimerl/indent/erlang_indent.erl	/^-\s\*define\s\*(\s\*PRINT_ERROR\>/;"	d	file:
+?PRINT_STATE	./bundle/vimerl/indent/erlang_indent.erl	/^-\s\*define\s\*(\s\*PRINT_STATE\>/;"	d	file:
+?RE_DEFINES1	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^-\s\*define\s\*(\s\*RE_DEFINES1\>/;"	d	file:
+?RE_DEFINES2	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^-\s\*define\s\*(\s\*RE_DEFINES2\>/;"	d	file:
+?RE_FUNCTIONS	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^-\s\*define\s\*(\s\*RE_FUNCTIONS\>/;"	d	file:
+?RE_TYPESPECS1	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^-\s\*define\s\*(\s\*RE_TYPESPECS1\>/;"	d	file:
+?RE_TYPESPECS2	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^-\s\*define\s\*(\s\*RE_TYPESPECS2\>/;"	d	file:
+?TESTCALL	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*define\s\*(\s\*TESTCALL\>/;"	d	file:
+?TESTCALL	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*define\s\*(\s\*TESTCALL\>/;"	d	file:
+?TIMEOUT	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*define\s\*(\s\*TIMEOUT\>/;"	d	file:
+?TIMEOUT	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*define\s\*(\s\*TIMEOUT\>/;"	d	file:
+?_	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*define\s\*(\s\*_\>/;"	d	file:
+?_Timeout	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*define\s\*(\s\*_Timeout\>/;"	d	file:
+?_timeout	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*define\s\*(\s\*_timeout\>/;"	d	file:
+?timeout	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*define\s\*(\s\*timeout\>/;"	d	file:
+BRANCH_EXPR	./bundle/vimerl/indent/erlang_indent.erl	/^-\s\*define\s\*(\s\*BRANCH_EXPR\>/;"	d	file:
+CLOSE_BRACKET	./bundle/vimerl/indent/erlang_indent.erl	/^-\s\*define\s\*(\s\*CLOSE_BRACKET\>/;"	d	file:
+COMPILE	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^-\s\*define\s\*(\s\*COMPILE\>/;"	d	file:
+DEFAULT_PATH	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^-\s\*define\s\*(\s\*DEFAULT_PATH\>/;"	d	file:
+FOO	./bundle/vimerl/test/test_spaces.erl	/^-\s\*define\s\*(\s\*FOO\>/;"	d	file:
+FOO	./bundle/vimerl/test/test_tabs.erl	/^-\s\*define\s\*(\s\*FOO\>/;"	d	file:
+IS	./bundle/vimerl/indent/erlang_indent.erl	/^-\s\*define\s\*(\s\*IS\>/;"	d	file:
+MACRO1	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*define\s\*(\s\*MACRO1\>/;"	d	file:
+MACRO1	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*define\s\*(\s\*MACRO1\>/;"	d	file:
+OPEN_BRACKET	./bundle/vimerl/indent/erlang_indent.erl	/^-\s\*define\s\*(\s\*OPEN_BRACKET\>/;"	d	file:
+PRINT_ERROR	./bundle/vimerl/indent/erlang_indent.erl	/^-\s\*define\s\*(\s\*PRINT_ERROR\>/;"	d	file:
+PRINT_STATE	./bundle/vimerl/indent/erlang_indent.erl	/^-\s\*define\s\*(\s\*PRINT_STATE\>/;"	d	file:
+RE_DEFINES1	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^-\s\*define\s\*(\s\*RE_DEFINES1\>/;"	d	file:
+RE_DEFINES2	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^-\s\*define\s\*(\s\*RE_DEFINES2\>/;"	d	file:
+RE_FUNCTIONS	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^-\s\*define\s\*(\s\*RE_FUNCTIONS\>/;"	d	file:
+RE_TYPESPECS1	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^-\s\*define\s\*(\s\*RE_TYPESPECS1\>/;"	d	file:
+RE_TYPESPECS2	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^-\s\*define\s\*(\s\*RE_TYPESPECS2\>/;"	d	file:
+TESTCALL	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*define\s\*(\s\*TESTCALL\>/;"	d	file:
+TESTCALL	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*define\s\*(\s\*TESTCALL\>/;"	d	file:
+TIMEOUT	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*define\s\*(\s\*TIMEOUT\>/;"	d	file:
+TIMEOUT	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*define\s\*(\s\*TIMEOUT\>/;"	d	file:
+_	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*define\s\*(\s\*_\>/;"	d	file:
+_Timeout	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*define\s\*(\s\*_Timeout\>/;"	d	file:
+_timeout	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*define\s\*(\s\*_timeout\>/;"	d	file:
+absname	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^absname\>/;"	f	file:
+absname	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^absname\>/;"	f	file:
+access_fields	./bundle/vim-erlang-runtime/test_syntax.erl	/^access_fields\>/;"	f	file:
+add_file_tag	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^add_file_tag\>/;"	f	file:
+add_func_tags	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^add_func_tags\>/;"	f	file:
+add_record_or_macro_tag	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^add_record_or_macro_tag\>/;"	f	file:
+add_tag	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^add_tag\>/;"	f	file:
+add_tags_from_file	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^add_tags_from_file\>/;"	f	file:
+add_type_tags	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^add_type_tags\>/;"	f	file:
+analyze_function	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^analyze_function\>/;"	f	file:
+analyze_function	./bundle/vimerl/autoload/erlang_complete.erl	/^analyze_function\>/;"	f	file:
+analyze_return	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^analyze_return\>/;"	f	file:
+analyze_return	./bundle/vimerl/autoload/erlang_complete.erl	/^analyze_return\>/;"	f	file:
+atom_examples	./bundle/vim-erlang-runtime/test_indent.erl	/^atom_examples\>/;"	f	file:
+atom_examples	./bundle/vim-erlang-runtime/test_syntax.erl	/^atom_examples\>/;"	f	file:
+atoms	./bundle/vim-erlang-runtime/test_indent_tabs.erl	/^atoms\>/;"	f	file:
+bar	./bundle/vim-erlang-runtime/test_indent.erl	/^bar\>/;"	f	file:
+bar	./bundle/vim-erlang-runtime/test_syntax.erl	/^bar\>/;"	f	file:
+bar	./bundle/vimerl/test/test_spaces.erl	/^bar\>/;"	f	file:
+bar	./bundle/vimerl/test/test_tabs.erl	/^bar\>/;"	f	file:
+beam_to_src_file	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^beam_to_src_file\>/;"	f	file:
+beam_to_src_file	./bundle/vimerl/autoload/erlang_complete.erl	/^beam_to_src_file\>/;"	f	file:
+beam_to_src_path	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^beam_to_src_path\>/;"	f	file:
+beam_to_src_path	./bundle/vimerl/autoload/erlang_complete.erl	/^beam_to_src_path\>/;"	f	file:
+bifs	./bundle/vim-erlang-runtime/test_syntax.erl	/^bifs\>/;"	f	file:
+binary_boolean	./bundle/vim-erlang-runtime/test_indent.erl	/^binary_boolean\>/;"	f	file:
+binary_boolean	./bundle/vim-erlang-runtime/test_syntax.erl	/^binary_boolean\>/;"	f	file:
+binary_operators	./bundle/vim-erlang-runtime/test_indent.erl	/^binary_operators\>/;"	f	file:
+binary_operators	./bundle/vim-erlang-runtime/test_syntax.erl	/^binary_operators\>/;"	f	file:
+bit_string_comprehension	./bundle/vim-erlang-runtime/test_indent.erl	/^bit_string_comprehension\>/;"	f	file:
+bit_syntax	./bundle/vim-erlang-runtime/test_indent.erl	/^bit_syntax\>/;"	f	file:
+bit_syntax	./bundle/vim-erlang-runtime/test_syntax.erl	/^bit_syntax\>/;"	f	file:
+bit_syntax_types	./bundle/vim-erlang-runtime/test_syntax.erl	/^bit_syntax_types\>/;"	f	file:
+blocks	./bundle/vim-erlang-runtime/test_indent_tabs.erl	/^blocks\>/;"	f	file:
+bools	./bundle/vim-erlang-runtime/test_syntax.erl	/^bools\>/;"	f	file:
+call	./bundle/vim-erlang-runtime/test_indent.erl	/^call\>/;"	f	file:
+call	./bundle/vim-erlang-runtime/test_syntax.erl	/^call\>/;"	f	file:
+case_example	./bundle/vim-erlang-runtime/test_indent.erl	/^case_example\>/;"	f	file:
+case_example	./bundle/vim-erlang-runtime/test_syntax.erl	/^case_example\>/;"	f	file:
+catch_after_other_keywords	./bundle/vim-erlang-runtime/test_indent.erl	/^catch_after_other_keywords\>/;"	f	file:
+catch_example	./bundle/vim-erlang-runtime/test_indent.erl	/^catch_example\>/;"	f	file:
+catch_example	./bundle/vim-erlang-runtime/test_syntax.erl	/^catch_example\>/;"	f	file:
+category	./bundle/vimerl/indent/erlang_indent.erl	/^category\>/;"	f	file:
+check_escript	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^check_escript\>/;"	f	file:
+check_file	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^check_file\>/;"	f	file:
+check_module	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^check_module\>/;"	f	file:
+column	./bundle/vimerl/indent/erlang_indent.erl	/^column\>/;"	f	file:
+command	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^command\>/;"	f	file:
+command_loop	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^command_loop\>/;"	f	file:
+comments	./bundle/vim-erlang-runtime/test_indent.erl	/^comments\>/;"	f	file:
+copy	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^copy\>/;"	f	file:
+create_tags	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^create_tags\>/;"	f	file:
+disable	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^disable\>/;"	f	file:
+distribution_bifs	./bundle/vim-erlang-runtime/test_syntax.erl	/^distribution_bifs\>/;"	f	file:
+eat_shebang	./bundle/vimerl/indent/erlang_indent.erl	/^eat_shebang\>/;"	f	file:
+embedded_terms	./bundle/vim-erlang-runtime/test_indent.erl	/^embedded_terms\>/;"	f	file:
+erlang_check	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	1;"	M
+erlang_check	./bundle/vimerl/compiler/erlang_check.erl	1;"	M
+erlang_check.erl	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	1;"	F
+erlang_check.erl	./bundle/vimerl/compiler/erlang_check.erl	1;"	F
+erlang_check:absname	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^absname\>/;"	f
+erlang_check:check_escript	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^check_escript\>/;"	f
+erlang_check:check_file	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^check_file\>/;"	f
+erlang_check:check_module	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^check_module\>/;"	f
+erlang_check:command	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^command\>/;"	f
+erlang_check:command_loop	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^command_loop\>/;"	f
+erlang_check:copy	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^copy\>/;"	f
+erlang_check:disable	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^disable\>/;"	f
+erlang_check:file_error	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^file_error\>/;"	f
+erlang_check:file_type	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^file_type\>/;"	f
+erlang_check:find_app_root	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^find_app_root\>/;"	f
+erlang_check:find_file	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^find_file\>/;"	f
+erlang_check:find_files	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^find_files\>/;"	f
+erlang_check:find_mfa_source	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^find_mfa_source\>/;"	f
+erlang_check:get_root	./bundle/vimerl/compiler/erlang_check.erl	/^get_root\>/;"	f
+erlang_check:guess_build_system	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^guess_build_system\>/;"	f
+erlang_check:is_app_root	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^is_app_root\>/;"	f
+erlang_check:load	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^load\>/;"	f
+erlang_check:load_build_files	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^load_build_files\>/;"	f
+erlang_check:load_makefiles	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^load_makefiles\>/;"	f
+erlang_check:load_rebar_files	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^load_rebar_files\>/;"	f
+erlang_check:load_with_rpc	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^load_with_rpc\>/;"	f
+erlang_check:log	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^log\>/;"	f
+erlang_check:log_error	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^log_error\>/;"	f
+erlang_check:main	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^main\>/;"	f
+erlang_check:main	./bundle/vimerl/compiler/erlang_check.erl	/^main\>/;"	f
+erlang_check:maybe_copy	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^maybe_copy\>/;"	f
+erlang_check:maybe_load	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^maybe_load\>/;"	f
+erlang_check:maybe_run_xref	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^maybe_run_xref\>/;"	f
+erlang_check:parse_args	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^parse_args\>/;"	f
+erlang_check:post_compilation	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^post_compilation\>/;"	f
+erlang_check:print_help	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^print_help\>/;"	f
+erlang_check:print_xref_warnings	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^print_xref_warnings\>/;"	f
+erlang_check:process_rebar_config	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^process_rebar_config\>/;"	f
+erlang_check:read_file_type	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^read_file_type\>/;"	f
+erlang_check:rebar_file	./bundle/vimerl/compiler/erlang_check.erl	/^rebar_file\>/;"	f
+erlang_check:rebar_opts	./bundle/vimerl/compiler/erlang_check.erl	/^rebar_opts\>/;"	f
+erlang_check:rpc	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^rpc\>/;"	f
+erlang_check:safe_element	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^safe_element\>/;"	f
+erlang_complete	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	1;"	M
+erlang_complete	./bundle/vimerl/autoload/erlang_complete.erl	1;"	M
+erlang_complete.erl	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	1;"	F
+erlang_complete.erl	./bundle/vimerl/autoload/erlang_complete.erl	1;"	F
+erlang_complete:absname	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^absname\>/;"	f
+erlang_complete:analyze_function	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^analyze_function\>/;"	f
+erlang_complete:analyze_function	./bundle/vimerl/autoload/erlang_complete.erl	/^analyze_function\>/;"	f
+erlang_complete:analyze_return	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^analyze_return\>/;"	f
+erlang_complete:analyze_return	./bundle/vimerl/autoload/erlang_complete.erl	/^analyze_return\>/;"	f
+erlang_complete:beam_to_src_file	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^beam_to_src_file\>/;"	f
+erlang_complete:beam_to_src_file	./bundle/vimerl/autoload/erlang_complete.erl	/^beam_to_src_file\>/;"	f
+erlang_complete:beam_to_src_path	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^beam_to_src_path\>/;"	f
+erlang_complete:beam_to_src_path	./bundle/vimerl/autoload/erlang_complete.erl	/^beam_to_src_path\>/;"	f
+erlang_complete:get_attribute	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^get_attribute\>/;"	f
+erlang_complete:get_attribute	./bundle/vimerl/autoload/erlang_complete.erl	/^get_attribute\>/;"	f
+erlang_complete:log	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^log\>/;"	f
+erlang_complete:log_error	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^log_error\>/;"	f
+erlang_complete:main	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^main\>/;"	f
+erlang_complete:main	./bundle/vimerl/autoload/erlang_complete.erl	/^main\>/;"	f
+erlang_complete:map_functions	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^map_functions\>/;"	f
+erlang_complete:map_functions	./bundle/vimerl/autoload/erlang_complete.erl	/^map_functions\>/;"	f
+erlang_complete:merge_functions	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^merge_functions\>/;"	f
+erlang_complete:merge_functions	./bundle/vimerl/autoload/erlang_complete.erl	/^merge_functions\>/;"	f
+erlang_complete:module_edoc	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^module_edoc\>/;"	f
+erlang_complete:module_edoc	./bundle/vimerl/autoload/erlang_complete.erl	/^module_edoc\>/;"	f
+erlang_complete:module_info2	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^module_info2\>/;"	f
+erlang_complete:module_info2	./bundle/vimerl/autoload/erlang_complete.erl	/^module_info2\>/;"	f
+erlang_complete:parse_args	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^parse_args\>/;"	f
+erlang_complete:print_function	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^print_function\>/;"	f
+erlang_complete:print_function	./bundle/vimerl/autoload/erlang_complete.erl	/^print_function\>/;"	f
+erlang_complete:print_help	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^print_help\>/;"	f
+erlang_complete:process_rebar_config	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^process_rebar_config\>/;"	f
+erlang_complete:process_rebar_configs	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^process_rebar_configs\>/;"	f
+erlang_complete:run	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^run\>/;"	f
+erlang_complete:run2	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^run2\>/;"	f
+erlang_complete:simplify_return	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^simplify_return\>/;"	f
+erlang_complete:simplify_return	./bundle/vimerl/autoload/erlang_complete.erl	/^simplify_return\>/;"	f
+erlang_indent	./bundle/vimerl/indent/erlang_indent.erl	1;"	M
+erlang_indent.erl	./bundle/vimerl/indent/erlang_indent.erl	1;"	F
+erlang_indent:category	./bundle/vimerl/indent/erlang_indent.erl	/^category\>/;"	f
+erlang_indent:column	./bundle/vimerl/indent/erlang_indent.erl	/^column\>/;"	f
+erlang_indent:eat_shebang	./bundle/vimerl/indent/erlang_indent.erl	/^eat_shebang\>/;"	f
+erlang_indent:format_indentation	./bundle/vimerl/indent/erlang_indent.erl	/^format_indentation\>/;"	f
+erlang_indent:indent	./bundle/vimerl/indent/erlang_indent.erl	/^indent\>/;"	f
+erlang_indent:indent_after	./bundle/vimerl/indent/erlang_indent.erl	/^indent_after\>/;"	f
+erlang_indent:indentation_between	./bundle/vimerl/indent/erlang_indent.erl	/^indentation_between\>/;"	f
+erlang_indent:irrelevant_token	./bundle/vimerl/indent/erlang_indent.erl	/^irrelevant_token\>/;"	f
+erlang_indent:line	./bundle/vimerl/indent/erlang_indent.erl	/^line\>/;"	f
+erlang_indent:main	./bundle/vimerl/indent/erlang_indent.erl	/^main\>/;"	f
+erlang_indent:next_relevant_token	./bundle/vimerl/indent/erlang_indent.erl	/^next_relevant_token\>/;"	f
+erlang_indent:parse_attribute	./bundle/vimerl/indent/erlang_indent.erl	/^parse_attribute\>/;"	f
+erlang_indent:parse_datum	./bundle/vimerl/indent/erlang_indent.erl	/^parse_datum\>/;"	f
+erlang_indent:parse_function	./bundle/vimerl/indent/erlang_indent.erl	/^parse_function\>/;"	f
+erlang_indent:parse_next	./bundle/vimerl/indent/erlang_indent.erl	/^parse_next\>/;"	f
+erlang_indent:parse_next2	./bundle/vimerl/indent/erlang_indent.erl	/^parse_next2\>/;"	f
+erlang_indent:parse_tokens	./bundle/vimerl/indent/erlang_indent.erl	/^parse_tokens\>/;"	f
+erlang_indent:pop	./bundle/vimerl/indent/erlang_indent.erl	/^pop\>/;"	f
+erlang_indent:push	./bundle/vimerl/indent/erlang_indent.erl	/^push\>/;"	f
+erlang_indent:read_fifo	./bundle/vimerl/indent/erlang_indent.erl	/^read_fifo\>/;"	f
+erlang_indent:read_file	./bundle/vimerl/indent/erlang_indent.erl	/^read_file\>/;"	f
+erlang_indent:reindent	./bundle/vimerl/indent/erlang_indent.erl	/^reindent\>/;"	f
+erlang_indent:same_line	./bundle/vimerl/indent/erlang_indent.erl	/^same_line\>/;"	f
+erlang_indent:source_indentation	./bundle/vimerl/indent/erlang_indent.erl	/^source_indentation\>/;"	f
+erlang_indent:split_prev_block	./bundle/vimerl/indent/erlang_indent.erl	/^split_prev_block\>/;"	f
+erlang_indent:symmetrical	./bundle/vimerl/indent/erlang_indent.erl	/^symmetrical\>/;"	f
+erlang_indent:tokenize_source	./bundle/vimerl/indent/erlang_indent.erl	/^tokenize_source\>/;"	f
+erlang_indent:tokenize_source2	./bundle/vimerl/indent/erlang_indent.erl	/^tokenize_source2\>/;"	f
+erlang_indent:unindent	./bundle/vimerl/indent/erlang_indent.erl	/^unindent\>/;"	f
+erlang_indent:write_fifo	./bundle/vimerl/indent/erlang_indent.erl	/^write_fifo\>/;"	f
+escape_sequences	./bundle/vim-erlang-runtime/test_syntax.erl	/^escape_sequences\>/;"	f	file:
+eval	./bundle/vim-erlang-runtime/test_indent.erl	/^eval\>/;"	f	file:
+export	./bundle/vim-erlang-runtime/test_syntax.erl	/^export\>/;"	f	file:
+f	./bundle/vim-erlang-runtime/test_indent.erl	/^f\>/;"	f	file:
+f	./bundle/vim-erlang-runtime/test_indent_manual.erl	/^f\>/;"	f	file:
+f	./bundle/vim-erlang-runtime/test_syntax.erl	/^f\>/;"	f	file:
+false	./bundle/vim-erlang-runtime/test_syntax.erl	/^false\>/;"	f	file:
+file_error	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^file_error\>/;"	f	file:
+file_type	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^file_type\>/;"	f	file:
+find_app_root	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^find_app_root\>/;"	f	file:
+find_file	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^find_file\>/;"	f	file:
+find_files	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^find_files\>/;"	f	file:
+find_mfa_source	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^find_mfa_source\>/;"	f	file:
+foo	./bundle/vimerl/test/test_spaces.erl	/^foo\>/;"	f	file:
+foo	./bundle/vimerl/test/test_tabs.erl	/^foo\>/;"	f	file:
+fooooooooo	./bundle/vimerl/test/test_spaces.erl	/^fooooooooo\>/;"	f	file:
+fooooooooo	./bundle/vimerl/test/test_tabs.erl	/^fooooooooo\>/;"	f	file:
+format_indentation	./bundle/vimerl/indent/erlang_indent.erl	/^format_indentation\>/;"	f	file:
+func	./bundle/vim-erlang-runtime/test_indent.erl	/^func\>/;"	f	file:
+func	./bundle/vim-erlang-runtime/test_syntax.erl	/^func\>/;"	f	file:
+func_calls	./bundle/vim-erlang-runtime/test_indent.erl	/^func_calls\>/;"	f	file:
+func_calls	./bundle/vim-erlang-runtime/test_syntax.erl	/^func_calls\>/;"	f	file:
+function_call_examples	./bundle/vim-erlang-runtime/test_syntax.erl	/^function_call_examples\>/;"	f	file:
+get_attribute	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^get_attribute\>/;"	f	file:
+get_attribute	./bundle/vimerl/autoload/erlang_complete.erl	/^get_attribute\>/;"	f	file:
+get_root	./bundle/vimerl/compiler/erlang_check.erl	/^get_root\>/;"	f	file:
+guess_build_system	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^guess_build_system\>/;"	f	file:
+handle	./bundle/vim-erlang-runtime/test_indent.erl	/^handle\>/;"	f	file:
+if_example	./bundle/vim-erlang-runtime/test_syntax.erl	/^if_example\>/;"	f	file:
+indent	./bundle/vimerl/indent/erlang_indent.erl	/^indent\>/;"	f	file:
+indent_after	./bundle/vimerl/indent/erlang_indent.erl	/^indent_after\>/;"	f	file:
+indentation_between	./bundle/vimerl/indent/erlang_indent.erl	/^indentation_between\>/;"	f	file:
+init	./bundle/Vundle.vim/test/files/test.erl	/^init\>/;"	f	file:
+init	./bundle/vundle/test/files/test.erl	/^init\>/;"	f	file:
+io_format_control_sequences	./bundle/vim-erlang-runtime/test_syntax.erl	/^io_format_control_sequences\>/;"	f	file:
+irrelevant_token	./bundle/vimerl/indent/erlang_indent.erl	/^irrelevant_token\>/;"	f	file:
+is_app_root	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^is_app_root\>/;"	f	file:
+just_atoms	./bundle/vim-erlang-runtime/test_syntax.erl	/^just_atoms\>/;"	f	file:
+line	./bundle/vimerl/indent/erlang_indent.erl	/^line\>/;"	f	file:
+list_comprehension	./bundle/vim-erlang-runtime/test_indent.erl	/^list_comprehension\>/;"	f	file:
+list_examples	./bundle/vim-erlang-runtime/test_indent.erl	/^list_examples\>/;"	f	file:
+list_head_tail	./bundle/vim-erlang-runtime/test_indent.erl	/^list_head_tail\>/;"	f	file:
+list_operations	./bundle/vim-erlang-runtime/test_indent.erl	/^list_operations\>/;"	f	file:
+list_operations	./bundle/vim-erlang-runtime/test_syntax.erl	/^list_operations\>/;"	f	file:
+load	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^load\>/;"	f	file:
+load_build_files	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^load_build_files\>/;"	f	file:
+load_makefiles	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^load_makefiles\>/;"	f	file:
+load_rebar_files	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^load_rebar_files\>/;"	f	file:
+load_with_rpc	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^load_with_rpc\>/;"	f	file:
+log	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^log\>/;"	f	file:
+log	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^log\>/;"	f	file:
+log	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^log\>/;"	f	file:
+log_error	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^log_error\>/;"	f	file:
+log_error	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^log_error\>/;"	f	file:
+log_error	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^log_error\>/;"	f	file:
+lookup	./bundle/vim-erlang-runtime/test_indent.erl	/^lookup\>/;"	f	file:
+macros	./bundle/vim-erlang-runtime/test_syntax.erl	/^macros\>/;"	f	file:
+main	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^main\>/;"	f	file:
+main	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^main\>/;"	f	file:
+main	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^main\>/;"	f	file:
+main	./bundle/vimerl/autoload/erlang_complete.erl	/^main\>/;"	f	file:
+main	./bundle/vimerl/compiler/erlang_check.erl	/^main\>/;"	f	file:
+main	./bundle/vimerl/indent/erlang_indent.erl	/^main\>/;"	f	file:
+map1	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*type\s\*map1\>/;"	t	file:
+map2	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*type\s\*map2\>/;"	t	file:
+map_functions	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^map_functions\>/;"	f	file:
+map_functions	./bundle/vimerl/autoload/erlang_complete.erl	/^map_functions\>/;"	f	file:
+maps	./bundle/vim-erlang-runtime/test_indent.erl	/^maps\>/;"	f	file:
+maps	./bundle/vim-erlang-runtime/test_syntax.erl	/^maps\>/;"	f	file:
+maybe_copy	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^maybe_copy\>/;"	f	file:
+maybe_load	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^maybe_load\>/;"	f	file:
+maybe_run_xref	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^maybe_run_xref\>/;"	f	file:
+merge_functions	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^merge_functions\>/;"	f	file:
+merge_functions	./bundle/vimerl/autoload/erlang_complete.erl	/^merge_functions\>/;"	f	file:
+module_edoc	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^module_edoc\>/;"	f	file:
+module_edoc	./bundle/vimerl/autoload/erlang_complete.erl	/^module_edoc\>/;"	f	file:
+module_info2	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^module_info2\>/;"	f	file:
+module_info2	./bundle/vimerl/autoload/erlang_complete.erl	/^module_info2\>/;"	f	file:
+multiline	./bundle/vim-erlang-runtime/test_indent.erl	/^multiline\>/;"	f	file:
+multiline_atoms	./bundle/vim-erlang-runtime/test_indent.erl	/^multiline_atoms\>/;"	f	file:
+multiline_string	./bundle/vim-erlang-runtime/test_indent.erl	/^multiline_string\>/;"	f	file:
+multiline_string	./bundle/vim-erlang-runtime/test_syntax.erl	/^multiline_string\>/;"	f	file:
+multiline_strings_and_atoms	./bundle/vim-erlang-runtime/test_indent.erl	/^multiline_strings_and_atoms\>/;"	f	file:
+my_bitstring_type	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*type\s\*my_bitstring_type\>/;"	t	file:
+my_fun_type	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*type\s\*my_fun_type\>/;"	t	file:
+my_opaq_type	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*opaque\s\*my_opaq_type\>/;"	t	file:
+my_struct_type	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*type\s\*my_struct_type\>/;"	t	file:
+next_relevant_token	./bundle/vimerl/indent/erlang_indent.erl	/^next_relevant_token\>/;"	f	file:
+not_guards	./bundle/vim-erlang-runtime/test_syntax.erl	/^not_guards\>/;"	f	file:
+nrec0	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*record\s\*(\s\*nrec0\>/;"	r	file:
+nrec1	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*record\s\*(\s\*nrec1\>/;"	r	file:
+nrec2	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*record\s\*(\s\*nrec2\>/;"	r	file:
+number_examples	./bundle/vim-erlang-runtime/test_indent.erl	/^number_examples\>/;"	f	file:
+number_examples	./bundle/vim-erlang-runtime/test_syntax.erl	/^number_examples\>/;"	f	file:
+number_with_dollar	./bundle/vim-erlang-runtime/test_syntax.erl	/^number_with_dollar\>/;"	f	file:
+old_guards	./bundle/vim-erlang-runtime/test_syntax.erl	/^old_guards\>/;"	f	file:
+orddict	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*type\s\*orddict\>/;"	t	file:
+parse_args	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^parse_args\>/;"	f	file:
+parse_args	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^parse_args\>/;"	f	file:
+parse_args	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^parse_args\>/;"	f	file:
+parse_attribute	./bundle/vimerl/indent/erlang_indent.erl	/^parse_attribute\>/;"	f	file:
+parse_datum	./bundle/vimerl/indent/erlang_indent.erl	/^parse_datum\>/;"	f	file:
+parse_function	./bundle/vimerl/indent/erlang_indent.erl	/^parse_function\>/;"	f	file:
+parse_next	./bundle/vimerl/indent/erlang_indent.erl	/^parse_next\>/;"	f	file:
+parse_next2	./bundle/vimerl/indent/erlang_indent.erl	/^parse_next2\>/;"	f	file:
+parse_tokens	./bundle/vimerl/indent/erlang_indent.erl	/^parse_tokens\>/;"	f	file:
+pattern_matching_examples	./bundle/vim-erlang-runtime/test_indent.erl	/^pattern_matching_examples\>/;"	f	file:
+person	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*record\s\*(\s\*person\>/;"	r	file:
+person	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*record\s\*(\s\*person\>/;"	r	file:
+pop	./bundle/vimerl/indent/erlang_indent.erl	/^pop\>/;"	f	file:
+post_compilation	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^post_compilation\>/;"	f	file:
+predefined_macros	./bundle/vim-erlang-runtime/test_syntax.erl	/^predefined_macros\>/;"	f	file:
+print_function	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^print_function\>/;"	f	file:
+print_function	./bundle/vimerl/autoload/erlang_complete.erl	/^print_function\>/;"	f	file:
+print_help	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^print_help\>/;"	f	file:
+print_help	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^print_help\>/;"	f	file:
+print_help	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^print_help\>/;"	f	file:
+print_xref_warnings	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^print_xref_warnings\>/;"	f	file:
+process_dictionary_bifs	./bundle/vim-erlang-runtime/test_syntax.erl	/^process_dictionary_bifs\>/;"	f	file:
+process_dir_tree	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^process_dir_tree\>/;"	f	file:
+process_filenames	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^process_filenames\>/;"	f	file:
+process_filenames_from_stdin	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^process_filenames_from_stdin\>/;"	f	file:
+process_rebar_config	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^process_rebar_config\>/;"	f	file:
+process_rebar_config	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^process_rebar_config\>/;"	f	file:
+process_rebar_configs	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^process_rebar_configs\>/;"	f	file:
+push	./bundle/vimerl/indent/erlang_indent.erl	/^push\>/;"	f	file:
+rand_pprint_opts	./bundle/vim-erlang-runtime/test_indent.erl	/^rand_pprint_opts\>/;"	f	file:
+rand_pprint_slice	./bundle/vim-erlang-runtime/test_indent.erl	/^rand_pprint_slice\>/;"	f	file:
+read_fifo	./bundle/vimerl/indent/erlang_indent.erl	/^read_fifo\>/;"	f	file:
+read_file	./bundle/vimerl/indent/erlang_indent.erl	/^read_file\>/;"	f	file:
+read_file_type	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^read_file_type\>/;"	f	file:
+rebar_file	./bundle/vimerl/compiler/erlang_check.erl	/^rebar_file\>/;"	f	file:
+rebar_opts	./bundle/vimerl/compiler/erlang_check.erl	/^rebar_opts\>/;"	f	file:
+rec	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*record\s\*(\s\*rec\>/;"	r	file:
+receive__tokens_after_kw	./bundle/vim-erlang-runtime/test_indent.erl	/^receive__tokens_after_kw\>/;"	f	file:
+receive_after__tokens_after_kw	./bundle/vim-erlang-runtime/test_indent.erl	/^receive_after__tokens_after_kw\>/;"	f	file:
+receive_example	./bundle/vim-erlang-runtime/test_syntax.erl	/^receive_example\>/;"	f	file:
+reindent	./bundle/vimerl/indent/erlang_indent.erl	/^reindent\>/;"	f	file:
+reserved_words	./bundle/vim-erlang-runtime/test_syntax.erl	/^reserved_words\>/;"	f	file:
+rpc	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^rpc\>/;"	f	file:
+run	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^run\>/;"	f	file:
+run2	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^run2\>/;"	f	file:
+safe_element	./bundle/vim-erlang-compiler/compiler/erlang_check.erl	/^safe_element\>/;"	f	file:
+same_line	./bundle/vimerl/indent/erlang_indent.erl	/^same_line\>/;"	f	file:
+scan_tags	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^scan_tags\>/;"	f	file:
+scan_tags_core	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^scan_tags_core\>/;"	f	file:
+send_example	./bundle/vim-erlang-runtime/test_syntax.erl	/^send_example\>/;"	f	file:
+short_circuit	./bundle/vim-erlang-runtime/test_indent.erl	/^short_circuit\>/;"	f	file:
+short_circuit	./bundle/vim-erlang-runtime/test_syntax.erl	/^short_circuit\>/;"	f	file:
+simplify_return	./bundle/vim-erlang-omnicomplete/autoload/erlang_complete.erl	/^simplify_return\>/;"	f	file:
+simplify_return	./bundle/vimerl/autoload/erlang_complete.erl	/^simplify_return\>/;"	f	file:
+source_indentation	./bundle/vimerl/indent/erlang_indent.erl	/^source_indentation\>/;"	f	file:
+split_prev_block	./bundle/vimerl/indent/erlang_indent.erl	/^split_prev_block\>/;"	f	file:
+state	./bundle/vimerl/indent/erlang_indent.erl	/^-\s\*record\s\*(\s\*state\>/;"	r	file:
+string_characters	./bundle/vim-erlang-runtime/test_indent.erl	/^string_characters\>/;"	f	file:
+string_characters	./bundle/vim-erlang-runtime/test_syntax.erl	/^string_characters\>/;"	f	file:
+strings	./bundle/vim-erlang-runtime/test_indent_tabs.erl	/^strings\>/;"	f	file:
+symmetrical	./bundle/vimerl/indent/erlang_indent.erl	/^symmetrical\>/;"	f	file:
+syntax_error	./bundle/vim-erlang-runtime/test_indent.erl	/^syntax_error\>/;"	f	file:
+tag_to_binary	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^tag_to_binary\>/;"	f	file:
+tags_to_file	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^tags_to_file\>/;"	f	file:
+term_comparisons	./bundle/vim-erlang-runtime/test_indent.erl	/^term_comparisons\>/;"	f	file:
+term_comparisons	./bundle/vim-erlang-runtime/test_syntax.erl	/^term_comparisons\>/;"	f	file:
+test	./bundle/Vundle.vim/test/files/test.erl	1;"	M
+test	./bundle/vundle/test/files/test.erl	1;"	M
+test.erl	./bundle/Vundle.vim/test/files/test.erl	1;"	F
+test.erl	./bundle/vundle/test/files/test.erl	1;"	F
+test:init	./bundle/Vundle.vim/test/files/test.erl	/^init\>/;"	f
+test:init	./bundle/vundle/test/files/test.erl	/^init\>/;"	f
+test_indent	./bundle/vim-erlang-runtime/test_indent.erl	1;"	M
+test_indent.erl	./bundle/vim-erlang-runtime/test_indent.erl	1;"	F
+test_indent:atom_examples	./bundle/vim-erlang-runtime/test_indent.erl	/^atom_examples\>/;"	f
+test_indent:bar	./bundle/vim-erlang-runtime/test_indent.erl	/^bar\>/;"	f
+test_indent:binary_boolean	./bundle/vim-erlang-runtime/test_indent.erl	/^binary_boolean\>/;"	f
+test_indent:binary_operators	./bundle/vim-erlang-runtime/test_indent.erl	/^binary_operators\>/;"	f
+test_indent:bit_string_comprehension	./bundle/vim-erlang-runtime/test_indent.erl	/^bit_string_comprehension\>/;"	f
+test_indent:bit_syntax	./bundle/vim-erlang-runtime/test_indent.erl	/^bit_syntax\>/;"	f
+test_indent:call	./bundle/vim-erlang-runtime/test_indent.erl	/^call\>/;"	f
+test_indent:case_example	./bundle/vim-erlang-runtime/test_indent.erl	/^case_example\>/;"	f
+test_indent:catch_after_other_keywords	./bundle/vim-erlang-runtime/test_indent.erl	/^catch_after_other_keywords\>/;"	f
+test_indent:catch_example	./bundle/vim-erlang-runtime/test_indent.erl	/^catch_example\>/;"	f
+test_indent:comments	./bundle/vim-erlang-runtime/test_indent.erl	/^comments\>/;"	f
+test_indent:embedded_terms	./bundle/vim-erlang-runtime/test_indent.erl	/^embedded_terms\>/;"	f
+test_indent:eval	./bundle/vim-erlang-runtime/test_indent.erl	/^eval\>/;"	f
+test_indent:f	./bundle/vim-erlang-runtime/test_indent.erl	/^f\>/;"	f
+test_indent:func	./bundle/vim-erlang-runtime/test_indent.erl	/^func\>/;"	f
+test_indent:func_calls	./bundle/vim-erlang-runtime/test_indent.erl	/^func_calls\>/;"	f
+test_indent:handle	./bundle/vim-erlang-runtime/test_indent.erl	/^handle\>/;"	f
+test_indent:list_comprehension	./bundle/vim-erlang-runtime/test_indent.erl	/^list_comprehension\>/;"	f
+test_indent:list_examples	./bundle/vim-erlang-runtime/test_indent.erl	/^list_examples\>/;"	f
+test_indent:list_head_tail	./bundle/vim-erlang-runtime/test_indent.erl	/^list_head_tail\>/;"	f
+test_indent:list_operations	./bundle/vim-erlang-runtime/test_indent.erl	/^list_operations\>/;"	f
+test_indent:lookup	./bundle/vim-erlang-runtime/test_indent.erl	/^lookup\>/;"	f
+test_indent:maps	./bundle/vim-erlang-runtime/test_indent.erl	/^maps\>/;"	f
+test_indent:multiline	./bundle/vim-erlang-runtime/test_indent.erl	/^multiline\>/;"	f
+test_indent:multiline_atoms	./bundle/vim-erlang-runtime/test_indent.erl	/^multiline_atoms\>/;"	f
+test_indent:multiline_string	./bundle/vim-erlang-runtime/test_indent.erl	/^multiline_string\>/;"	f
+test_indent:multiline_strings_and_atoms	./bundle/vim-erlang-runtime/test_indent.erl	/^multiline_strings_and_atoms\>/;"	f
+test_indent:my_bitstring_type	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*type\s\*my_bitstring_type\>/;"	t
+test_indent:my_fun_type	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*type\s\*my_fun_type\>/;"	t
+test_indent:my_opaq_type	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*opaque\s\*my_opaq_type\>/;"	t
+test_indent:my_struct_type	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*type\s\*my_struct_type\>/;"	t
+test_indent:number_examples	./bundle/vim-erlang-runtime/test_indent.erl	/^number_examples\>/;"	f
+test_indent:orddict	./bundle/vim-erlang-runtime/test_indent.erl	/^-\s\*type\s\*orddict\>/;"	t
+test_indent:pattern_matching_examples	./bundle/vim-erlang-runtime/test_indent.erl	/^pattern_matching_examples\>/;"	f
+test_indent:rand_pprint_opts	./bundle/vim-erlang-runtime/test_indent.erl	/^rand_pprint_opts\>/;"	f
+test_indent:rand_pprint_slice	./bundle/vim-erlang-runtime/test_indent.erl	/^rand_pprint_slice\>/;"	f
+test_indent:receive__tokens_after_kw	./bundle/vim-erlang-runtime/test_indent.erl	/^receive__tokens_after_kw\>/;"	f
+test_indent:receive_after__tokens_after_kw	./bundle/vim-erlang-runtime/test_indent.erl	/^receive_after__tokens_after_kw\>/;"	f
+test_indent:short_circuit	./bundle/vim-erlang-runtime/test_indent.erl	/^short_circuit\>/;"	f
+test_indent:string_characters	./bundle/vim-erlang-runtime/test_indent.erl	/^string_characters\>/;"	f
+test_indent:syntax_error	./bundle/vim-erlang-runtime/test_indent.erl	/^syntax_error\>/;"	f
+test_indent:term_comparisons	./bundle/vim-erlang-runtime/test_indent.erl	/^term_comparisons\>/;"	f
+test_indent:throw_example	./bundle/vim-erlang-runtime/test_indent.erl	/^throw_example\>/;"	f
+test_indent:tricky	./bundle/vim-erlang-runtime/test_indent.erl	/^tricky\>/;"	f
+test_indent:try_example	./bundle/vim-erlang-runtime/test_indent.erl	/^try_example\>/;"	f
+test_indent:try_with_of__one_branch	./bundle/vim-erlang-runtime/test_indent.erl	/^try_with_of__one_branch\>/;"	f
+test_indent:try_with_of__one_branch__guards	./bundle/vim-erlang-runtime/test_indent.erl	/^try_with_of__one_branch__guards\>/;"	f
+test_indent:try_with_of__two_branches	./bundle/vim-erlang-runtime/test_indent.erl	/^try_with_of__two_branches\>/;"	f
+test_indent:try_with_of__two_branches__guards	./bundle/vim-erlang-runtime/test_indent.erl	/^try_with_of__two_branches__guards\>/;"	f
+test_indent:try_without_of__one_branch	./bundle/vim-erlang-runtime/test_indent.erl	/^try_without_of__one_branch\>/;"	f
+test_indent:try_without_of__one_branch__guards	./bundle/vim-erlang-runtime/test_indent.erl	/^try_without_of__one_branch__guards\>/;"	f
+test_indent:try_without_of__two_branches	./bundle/vim-erlang-runtime/test_indent.erl	/^try_without_of__two_branches\>/;"	f
+test_indent:try_without_of__two_branches__guards	./bundle/vim-erlang-runtime/test_indent.erl	/^try_without_of__two_branches__guards\>/;"	f
+test_indent:tuple_examples	./bundle/vim-erlang-runtime/test_indent.erl	/^tuple_examples\>/;"	f
+test_indent:unary_boolean	./bundle/vim-erlang-runtime/test_indent.erl	/^unary_boolean\>/;"	f
+test_indent:unary_operators	./bundle/vim-erlang-runtime/test_indent.erl	/^unary_operators\>/;"	f
+test_indent:variable_characters	./bundle/vim-erlang-runtime/test_indent.erl	/^variable_characters\>/;"	f
+test_indent:variables	./bundle/vim-erlang-runtime/test_indent.erl	/^variables\>/;"	f
+test_indent_manual	./bundle/vim-erlang-runtime/test_indent_manual.erl	1;"	M
+test_indent_manual.erl	./bundle/vim-erlang-runtime/test_indent_manual.erl	1;"	F
+test_indent_manual:f	./bundle/vim-erlang-runtime/test_indent_manual.erl	/^f\>/;"	f
+test_indent_tabs	./bundle/vim-erlang-runtime/test_indent_tabs.erl	1;"	M
+test_indent_tabs.erl	./bundle/vim-erlang-runtime/test_indent_tabs.erl	1;"	F
+test_indent_tabs:atoms	./bundle/vim-erlang-runtime/test_indent_tabs.erl	/^atoms\>/;"	f
+test_indent_tabs:blocks	./bundle/vim-erlang-runtime/test_indent_tabs.erl	/^blocks\>/;"	f
+test_indent_tabs:strings	./bundle/vim-erlang-runtime/test_indent_tabs.erl	/^strings\>/;"	f
+test_spaces	./bundle/vimerl/test/test_spaces.erl	1;"	M
+test_spaces.erl	./bundle/vimerl/test/test_spaces.erl	1;"	F
+test_spaces:bar	./bundle/vimerl/test/test_spaces.erl	/^bar\>/;"	f
+test_spaces:foo	./bundle/vimerl/test/test_spaces.erl	/^foo\>/;"	f
+test_spaces:fooooooooo	./bundle/vimerl/test/test_spaces.erl	/^fooooooooo\>/;"	f
+test_syntax	./bundle/vim-erlang-runtime/test_syntax.erl	1;"	M
+test_syntax.erl	./bundle/vim-erlang-runtime/test_syntax.erl	1;"	F
+test_syntax:access_fields	./bundle/vim-erlang-runtime/test_syntax.erl	/^access_fields\>/;"	f
+test_syntax:atom_examples	./bundle/vim-erlang-runtime/test_syntax.erl	/^atom_examples\>/;"	f
+test_syntax:bar	./bundle/vim-erlang-runtime/test_syntax.erl	/^bar\>/;"	f
+test_syntax:bifs	./bundle/vim-erlang-runtime/test_syntax.erl	/^bifs\>/;"	f
+test_syntax:binary_boolean	./bundle/vim-erlang-runtime/test_syntax.erl	/^binary_boolean\>/;"	f
+test_syntax:binary_operators	./bundle/vim-erlang-runtime/test_syntax.erl	/^binary_operators\>/;"	f
+test_syntax:bit_syntax	./bundle/vim-erlang-runtime/test_syntax.erl	/^bit_syntax\>/;"	f
+test_syntax:bit_syntax_types	./bundle/vim-erlang-runtime/test_syntax.erl	/^bit_syntax_types\>/;"	f
+test_syntax:bools	./bundle/vim-erlang-runtime/test_syntax.erl	/^bools\>/;"	f
+test_syntax:call	./bundle/vim-erlang-runtime/test_syntax.erl	/^call\>/;"	f
+test_syntax:case_example	./bundle/vim-erlang-runtime/test_syntax.erl	/^case_example\>/;"	f
+test_syntax:catch_example	./bundle/vim-erlang-runtime/test_syntax.erl	/^catch_example\>/;"	f
+test_syntax:distribution_bifs	./bundle/vim-erlang-runtime/test_syntax.erl	/^distribution_bifs\>/;"	f
+test_syntax:escape_sequences	./bundle/vim-erlang-runtime/test_syntax.erl	/^escape_sequences\>/;"	f
+test_syntax:export	./bundle/vim-erlang-runtime/test_syntax.erl	/^export\>/;"	f
+test_syntax:f	./bundle/vim-erlang-runtime/test_syntax.erl	/^f\>/;"	f
+test_syntax:false	./bundle/vim-erlang-runtime/test_syntax.erl	/^false\>/;"	f
+test_syntax:func	./bundle/vim-erlang-runtime/test_syntax.erl	/^func\>/;"	f
+test_syntax:func_calls	./bundle/vim-erlang-runtime/test_syntax.erl	/^func_calls\>/;"	f
+test_syntax:function_call_examples	./bundle/vim-erlang-runtime/test_syntax.erl	/^function_call_examples\>/;"	f
+test_syntax:if_example	./bundle/vim-erlang-runtime/test_syntax.erl	/^if_example\>/;"	f
+test_syntax:io_format_control_sequences	./bundle/vim-erlang-runtime/test_syntax.erl	/^io_format_control_sequences\>/;"	f
+test_syntax:just_atoms	./bundle/vim-erlang-runtime/test_syntax.erl	/^just_atoms\>/;"	f
+test_syntax:list_operations	./bundle/vim-erlang-runtime/test_syntax.erl	/^list_operations\>/;"	f
+test_syntax:macros	./bundle/vim-erlang-runtime/test_syntax.erl	/^macros\>/;"	f
+test_syntax:map1	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*type\s\*map1\>/;"	t
+test_syntax:map2	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*type\s\*map2\>/;"	t
+test_syntax:maps	./bundle/vim-erlang-runtime/test_syntax.erl	/^maps\>/;"	f
+test_syntax:multiline_string	./bundle/vim-erlang-runtime/test_syntax.erl	/^multiline_string\>/;"	f
+test_syntax:not_guards	./bundle/vim-erlang-runtime/test_syntax.erl	/^not_guards\>/;"	f
+test_syntax:number_examples	./bundle/vim-erlang-runtime/test_syntax.erl	/^number_examples\>/;"	f
+test_syntax:number_with_dollar	./bundle/vim-erlang-runtime/test_syntax.erl	/^number_with_dollar\>/;"	f
+test_syntax:old_guards	./bundle/vim-erlang-runtime/test_syntax.erl	/^old_guards\>/;"	f
+test_syntax:predefined_macros	./bundle/vim-erlang-runtime/test_syntax.erl	/^predefined_macros\>/;"	f
+test_syntax:process_dictionary_bifs	./bundle/vim-erlang-runtime/test_syntax.erl	/^process_dictionary_bifs\>/;"	f
+test_syntax:receive_example	./bundle/vim-erlang-runtime/test_syntax.erl	/^receive_example\>/;"	f
+test_syntax:reserved_words	./bundle/vim-erlang-runtime/test_syntax.erl	/^reserved_words\>/;"	f
+test_syntax:send_example	./bundle/vim-erlang-runtime/test_syntax.erl	/^send_example\>/;"	f
+test_syntax:short_circuit	./bundle/vim-erlang-runtime/test_syntax.erl	/^short_circuit\>/;"	f
+test_syntax:string_characters	./bundle/vim-erlang-runtime/test_syntax.erl	/^string_characters\>/;"	f
+test_syntax:term_comparisons	./bundle/vim-erlang-runtime/test_syntax.erl	/^term_comparisons\>/;"	f
+test_syntax:test_type_bifs	./bundle/vim-erlang-runtime/test_syntax.erl	/^test_type_bifs\>/;"	f
+test_syntax:throw_example	./bundle/vim-erlang-runtime/test_syntax.erl	/^throw_example\>/;"	f
+test_syntax:true	./bundle/vim-erlang-runtime/test_syntax.erl	/^true\>/;"	f
+test_syntax:try_example	./bundle/vim-erlang-runtime/test_syntax.erl	/^try_example\>/;"	f
+test_syntax:tuple_list	./bundle/vim-erlang-runtime/test_syntax.erl	/^tuple_list\>/;"	f
+test_syntax:unary_boolean	./bundle/vim-erlang-runtime/test_syntax.erl	/^unary_boolean\>/;"	f
+test_syntax:unary_operators	./bundle/vim-erlang-runtime/test_syntax.erl	/^unary_operators\>/;"	f
+test_syntax:update_fields	./bundle/vim-erlang-runtime/test_syntax.erl	/^update_fields\>/;"	f
+test_syntax:variable_characters	./bundle/vim-erlang-runtime/test_syntax.erl	/^variable_characters\>/;"	f
+test_syntax:variables	./bundle/vim-erlang-runtime/test_syntax.erl	/^variables\>/;"	f
+test_tabs	./bundle/vimerl/test/test_tabs.erl	1;"	M
+test_tabs.erl	./bundle/vimerl/test/test_tabs.erl	1;"	F
+test_tabs:bar	./bundle/vimerl/test/test_tabs.erl	/^bar\>/;"	f
+test_tabs:foo	./bundle/vimerl/test/test_tabs.erl	/^foo\>/;"	f
+test_tabs:fooooooooo	./bundle/vimerl/test/test_tabs.erl	/^fooooooooo\>/;"	f
+test_type_bifs	./bundle/vim-erlang-runtime/test_syntax.erl	/^test_type_bifs\>/;"	f	file:
+throw_example	./bundle/vim-erlang-runtime/test_indent.erl	/^throw_example\>/;"	f	file:
+throw_example	./bundle/vim-erlang-runtime/test_syntax.erl	/^throw_example\>/;"	f	file:
+timeout	./bundle/vim-erlang-runtime/test_syntax.erl	/^-\s\*define\s\*(\s\*timeout\>/;"	d	file:
+tokenize_source	./bundle/vimerl/indent/erlang_indent.erl	/^tokenize_source\>/;"	f	file:
+tokenize_source2	./bundle/vimerl/indent/erlang_indent.erl	/^tokenize_source2\>/;"	f	file:
+tricky	./bundle/vim-erlang-runtime/test_indent.erl	/^tricky\>/;"	f	file:
+trim	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^trim\>/;"	f	file:
+true	./bundle/vim-erlang-runtime/test_syntax.erl	/^true\>/;"	f	file:
+try_example	./bundle/vim-erlang-runtime/test_indent.erl	/^try_example\>/;"	f	file:
+try_example	./bundle/vim-erlang-runtime/test_syntax.erl	/^try_example\>/;"	f	file:
+try_with_of__one_branch	./bundle/vim-erlang-runtime/test_indent.erl	/^try_with_of__one_branch\>/;"	f	file:
+try_with_of__one_branch__guards	./bundle/vim-erlang-runtime/test_indent.erl	/^try_with_of__one_branch__guards\>/;"	f	file:
+try_with_of__two_branches	./bundle/vim-erlang-runtime/test_indent.erl	/^try_with_of__two_branches\>/;"	f	file:
+try_with_of__two_branches__guards	./bundle/vim-erlang-runtime/test_indent.erl	/^try_with_of__two_branches__guards\>/;"	f	file:
+try_without_of__one_branch	./bundle/vim-erlang-runtime/test_indent.erl	/^try_without_of__one_branch\>/;"	f	file:
+try_without_of__one_branch__guards	./bundle/vim-erlang-runtime/test_indent.erl	/^try_without_of__one_branch__guards\>/;"	f	file:
+try_without_of__two_branches	./bundle/vim-erlang-runtime/test_indent.erl	/^try_without_of__two_branches\>/;"	f	file:
+try_without_of__two_branches__guards	./bundle/vim-erlang-runtime/test_indent.erl	/^try_without_of__two_branches__guards\>/;"	f	file:
+tuple_examples	./bundle/vim-erlang-runtime/test_indent.erl	/^tuple_examples\>/;"	f	file:
+tuple_list	./bundle/vim-erlang-runtime/test_syntax.erl	/^tuple_list\>/;"	f	file:
+unary_boolean	./bundle/vim-erlang-runtime/test_indent.erl	/^unary_boolean\>/;"	f	file:
+unary_boolean	./bundle/vim-erlang-runtime/test_syntax.erl	/^unary_boolean\>/;"	f	file:
+unary_operators	./bundle/vim-erlang-runtime/test_indent.erl	/^unary_operators\>/;"	f	file:
+unary_operators	./bundle/vim-erlang-runtime/test_syntax.erl	/^unary_operators\>/;"	f	file:
+unindent	./bundle/vimerl/indent/erlang_indent.erl	/^unindent\>/;"	f	file:
+update_fields	./bundle/vim-erlang-runtime/test_syntax.erl	/^update_fields\>/;"	f	file:
+variable_characters	./bundle/vim-erlang-runtime/test_indent.erl	/^variable_characters\>/;"	f	file:
+variable_characters	./bundle/vim-erlang-runtime/test_syntax.erl	/^variable_characters\>/;"	f	file:
+variables	./bundle/vim-erlang-runtime/test_indent.erl	/^variables\>/;"	f	file:
+variables	./bundle/vim-erlang-runtime/test_syntax.erl	/^variables\>/;"	f	file:
+vim-erlang-tags	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	1;"	M
+vim-erlang-tags.erl	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	1;"	F
+vim-erlang-tags:add_file_tag	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^add_file_tag\>/;"	f
+vim-erlang-tags:add_func_tags	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^add_func_tags\>/;"	f
+vim-erlang-tags:add_record_or_macro_tag	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^add_record_or_macro_tag\>/;"	f
+vim-erlang-tags:add_tag	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^add_tag\>/;"	f
+vim-erlang-tags:add_tags_from_file	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^add_tags_from_file\>/;"	f
+vim-erlang-tags:add_type_tags	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^add_type_tags\>/;"	f
+vim-erlang-tags:create_tags	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^create_tags\>/;"	f
+vim-erlang-tags:log	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^log\>/;"	f
+vim-erlang-tags:log_error	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^log_error\>/;"	f
+vim-erlang-tags:main	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^main\>/;"	f
+vim-erlang-tags:parse_args	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^parse_args\>/;"	f
+vim-erlang-tags:print_help	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^print_help\>/;"	f
+vim-erlang-tags:process_dir_tree	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^process_dir_tree\>/;"	f
+vim-erlang-tags:process_filenames	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^process_filenames\>/;"	f
+vim-erlang-tags:process_filenames_from_stdin	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^process_filenames_from_stdin\>/;"	f
+vim-erlang-tags:scan_tags	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^scan_tags\>/;"	f
+vim-erlang-tags:scan_tags_core	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^scan_tags_core\>/;"	f
+vim-erlang-tags:tag_to_binary	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^tag_to_binary\>/;"	f
+vim-erlang-tags:tags_to_file	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^tags_to_file\>/;"	f
+vim-erlang-tags:trim	./bundle/vim-erlang-tags/bin/vim-erlang-tags.erl	/^trim\>/;"	f
+write_fifo	./bundle/vimerl/indent/erlang_indent.erl	/^write_fifo\>/;"	f	file:

@@ -1,9 +1,14 @@
 set nocompatible
 set encoding=utf-8
 
+" use the system clipboard by default, requires a Vim compiled
+" " with +clipboard - `brew install vim` is the easiest way
+set clipboard=unnamed
+
+
+
 source ~/.vim/bundles.vim
 
-set rtp+=/usr/local/go/misc/vim
 filetype plugin indent on
 filetype plugin on
 syntax on
@@ -18,7 +23,7 @@ set incsearch		" do incremental searching
 
 
 set listchars=tab:>.,trail:.
-set tw=78
+set tw=80
 
 map Q gq
 
@@ -40,7 +45,7 @@ if has("autocmd")
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
   au!
-  
+
   " For all text files set 'textwidth' to 78 characters.
   autocmd FileType text setlocal textwidth=80
 
@@ -91,20 +96,20 @@ endif
 set statusline=%<%F%h%m%r%h%w%y\ %{&ff}\ %{strftime(\"%d/%m/%Y-%H:%M\")}%=\ %c%V\ %l\,%L\ %P
 
 filetype plugin on
-"filetype plugin indent on
+filetype plugin indent on
 
 if has("multi_byte")
      set encoding=utf-8
      setglobal fileencoding=utf-8
      "set bomb
-     set termencoding=iso-8859-15
+     set termencoding=utf-8
      set fileencodings=utf-8,ucs-bom,iso-8859-15,iso-8859-3
 else
      echoerr "Sorry, this version of (g)vim was not compiled with +multi_byte"
 endif
 
 " Preview des <Tab>
-"set list listchars=tab:»\ 
+"set list listchars=tab:»\
 
 
 
@@ -141,13 +146,37 @@ else
     endif
 endif
 
+
+
 set directory=~/.backup/vim/swap
 set backupdir=~/.backup/vim
 set backup
 
-" use the system clipboard by default, requires a Vim compiled
-" " with +clipboard - `brew install vim` is the easiest way
-set clipboard=unnamed
+" don't resize automatically
+let g:golden_ratio_autocommand = 0
+"
+"let &winheight = &lines * 7 / 10
+"let &winheight = 999
+
+" netrw options
+let g:netrw_altv            = 1
+let g:netrw_fastbrowse      = 0
+let g:netrw_keepdir         = 0
+let g:netrw_liststyle       = 1
+let g:netrw_retmap          = 0
+let g:netrw_silent          = 1
+let g:netrw_special_syntax  = 1
+let g:netrw_use_errorwindow = 0
+let g:netrw_banner          = 0
+"let g:netrw_browse_split    = 0
+"let g:netrw_errorlvl        = 0
+
+" erlang options
+let g:erl_author = "Benoit Chesneau"
+
+
+" disable preview window
+set completeopt-=preview
 
 " Source .vimrc on save
 autocmd! bufwritepost ~/.vimrc  source ~/.vimrc

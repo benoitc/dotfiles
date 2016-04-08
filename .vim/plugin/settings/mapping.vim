@@ -15,5 +15,10 @@ endfunction
 inoremap <Tab> <C-R>=CleverTab()<CR>
 imap <C-Space> <C-X><C-O>
 
-noremap <silent> <F4> :Tlist<CR>
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+
+" minibuffer explorer
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
