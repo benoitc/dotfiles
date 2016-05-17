@@ -27,9 +27,6 @@ set tw=80
 
 map Q gq
 
-" GO plugins
-set rtp+=$GOROOT/misc/vim
-
 syntax on
 set hlsearch
 
@@ -75,7 +72,7 @@ set expandtab
 set softtabstop=4
 set number
 set ruler
-"set scrolloff=10
+set scrolloff=10
 set showcmd
 set showmode
 set updatetime=250
@@ -159,24 +156,44 @@ let g:golden_ratio_autocommand = 0
 "let &winheight = 999
 
 " netrw options
-let g:netrw_altv            = 1
+"let g:netrw_altv            = 1
 let g:netrw_fastbrowse      = 0
-let g:netrw_keepdir         = 0
+let g:netrw_keepdir         = 1 
 let g:netrw_liststyle       = 1
 let g:netrw_retmap          = 0
-let g:netrw_silent          = 1
-let g:netrw_special_syntax  = 1
-let g:netrw_use_errorwindow = 0
-let g:netrw_banner          = 0
-"let g:netrw_browse_split    = 0
+"let g:netrw_silent          = 1
+"let g:netrw_special_syntax  = 1
+"let g:netrw_use_errorwindow = 0
+"let g:netrw_banner          = 0
+let g:netrw_browse_split    = 0
 "let g:netrw_errorlvl        = 0
+"
+"
+"
 
 " erlang options
 let g:erl_author = "Benoit Chesneau"
 
-
 " disable preview window
-set completeopt-=preview
+"set completeopt-=preview
+
+" ctags
+let Tlist_Ctags_Cmd = '/usr/local/bin/ectags' " Location of ctags
+let Tlist_Sort_Type = "name" " order by 
+let Tlist_Use_Right_Window = 1 " split to the right side of the screen
+let Tlist_Compart_Format = 1 " show small meny
+let Tlist_Exist_OnlyWindow = 1 " if you are the last, kill yourself
+let Tlist_File_Fold_Auto_Close = 1 " Do not close tags for other files
+let Tlist_Enable_Fold_Column = 0 " Do not show folding tree
+    
+" minibuffer explorer
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
+
+
+noremap <silent> <F4> :Tlist<CR>
 
 " Source .vimrc on save
 autocmd! bufwritepost ~/.vimrc  source ~/.vimrc

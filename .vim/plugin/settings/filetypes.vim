@@ -1,6 +1,7 @@
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType js setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
+autocmd FileType erlang setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 
 au BufRead,BufNewFile *.json set filetype=json
 au! Syntax json source /Users/benoitc/.vim/ftplugin/json.vim
