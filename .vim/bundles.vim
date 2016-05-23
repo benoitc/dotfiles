@@ -20,6 +20,8 @@ Bundle 'vim-erlang/vim-erlang-tags'
 Bundle 'vim-erlang/vim-erlang-omnicomplete'
 Bundle 'vim-erlang/vim-erlang-compiler'
 Bundle 'vim-erlang/vim-erlang-skeletons'
+Bundle 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 call vundle#end()
 filetype plugin indent on
