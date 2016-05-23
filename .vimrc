@@ -195,5 +195,9 @@ let g:miniBufExplModSelTarget = 1
 
 noremap <silent> <F4> :Tlist<CR>
 
+"autocmd vimenter * NERDTree
+
+map <C-n> :NERDTreeToggle<CR>
+
 " Source .vimrc on save
 autocmd! bufwritepost ~/.vimrc  source ~/.vimrc
