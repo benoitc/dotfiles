@@ -1,3 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/benoitc/Work/barrel/src'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/benoitc/Misc/hackney/src'
+let g:netrw_dirhist_2='/Users/benoitc/Misc/hackney'
+let g:netrw_dirhist_3='/Users/benoitc/KobilProject/es_store/test'
+let g:netrw_dirhist_4='/Users/benoitc/KobilProject/es_store'
+let g:netrw_dirhist_5='/Users/benoitc/Misc/hackney'

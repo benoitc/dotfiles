@@ -3,12 +3,17 @@ set encoding=utf-8
 
 " use the system clipboard by default, requires a Vim compiled
 " " with +clipboard - `brew install vim` is the easiest way
-set clipboard=unnamed
-
-
-
 source ~/.vim/bundles.vim
 
+if (has('clipboard'))
+    if has('unnamedplus') " when possible use the + register for copy-paste
+        set clipboard=unnamed,unnamedplus
+    else " on mac and windows, use * register for copy-paste
+        set clipboard=unnamed
+    endif
+endif
+"set clipboard=unnamed
+"
 filetype plugin indent on
 filetype plugin on
 syntax on
@@ -23,7 +28,7 @@ set incsearch		" do incremental searching
 
 
 set listchars=tab:>.,trail:.
-set tw=80
+set tw=120
 
 map Q gq
 
@@ -44,7 +49,7 @@ if has("autocmd")
   au!
 
   " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=80
+  autocmd FileType text setlocal textwidth=120
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
@@ -77,15 +82,16 @@ set showcmd
 set showmode
 set updatetime=250
 "set enc=utf-8;
+set tenc=utf8
 
 " no error or visual error annoyance
 set noerrorbells
 set visualbell t_vb=
 
 if exists('+colorcolum:n')
-    set colorcolumn=80
+    set colorcolumn=120
 else
-    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
 endif
 
 
@@ -131,7 +137,7 @@ if has("gui_running")
     set guioptions-=r
     set guioptions-=R
 
-    set guifont="Sans 8"
+    set guifont="Sans 12"
 else
     if has("mouse")
         set mouse=a
@@ -197,7 +203,18 @@ noremap <silent> <F4> :Tlist<CR>
 
 "autocmd vimenter * NERDTree
 
-map <C-n> :NERDTreeToggle<CR>
+map <D-n> :NERDTreeToggle<CR>
 
-" Source .vimrc on save
+
+"vim erlang
+let g:erl_tpl_dir="/Users/benoitc/.cache/vim-erlang/templates"
+let g:erl_author="Benoit Chesneau"
+let g:erl_company="Enki Multimedia"
+let g:erl_replace_buffer=1
+
+
+vmap <M-c> :w !pbcopy<CR><CR> 
+
+
+" Sourcl .vimrc on save
 autocmd! bufwritepost ~/.vimrc  source ~/.vimrc
